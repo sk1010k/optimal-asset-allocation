@@ -113,8 +113,10 @@ if __name__ == '__main__':
     agent = agents.Agent(env)
     print('Training...')
     log = q_learning(env, agent)
+    agent.save_model('models/model.pth')
     
     # Test
+    agent.load_model('models/model.pth')
     env.reset_prices(test_prices)
     env.reset()
     print('Testing...')
