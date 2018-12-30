@@ -1,0 +1,18 @@
+[[source]]
+verify_ssl = true
+url = "https://pypi.org/simple"
+name = "pypi"
+
+[packages]
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+torch = "*"
+gym = "*"
+ipdb = "*"
+jupyterlab = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
